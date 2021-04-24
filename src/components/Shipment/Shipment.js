@@ -27,7 +27,7 @@ setShippingData(data);
         };
 
 
-      fetch('http://localhost:3001/addOrder',{
+      fetch('https://powerful-crag-63339.herokuapp.com/addOrder',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

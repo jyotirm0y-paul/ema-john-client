@@ -13,7 +13,7 @@ const Shop = () => {
     const [search , setSearch] = useState('')
 
     useEffect(() => {
-        fetch('http://localhost:3001/products?search='+search)
+        fetch('https://powerful-crag-63339.herokuapp.com/products?search='+search)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [search])

@@ -8,7 +8,7 @@ const ProductDetail = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:3001/product/'+ productKey)
+        fetch('https://powerful-crag-63339.herokuapp.com/product/'+ productKey)
         .then(res => res.json())
         .then(data => setProduct(data))
     }, [productKey])
